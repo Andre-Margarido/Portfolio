@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização geral da home */
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Menu lateral */
+.menu-container {
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* Texto "MENU" rotacionado */
+.menu-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  transform: rotate(-90deg) translateX(12px);
+  transform-origin: left;
+  margin-right: -43px;
+  margin-left: 70px;
+  padding-right: 5px;
+  margin-top: 32px;
+}
+
+/* Lista de links */
+.menu-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-links li {
+  text-align: left;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+  display: block;
+}
+
+.menu-links a:hover {
+  color: gray;
+}
+
+/* Contato na parte inferior */
+.contact-info {
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Versão Desktop */
+@media (min-width: 1550px) {
+  .menu-text {
+    font-size: 2rem;
+    font-weight: bold;
+    transform: rotate(-90deg) translateX(12px);
+    transform-origin: left;
+    margin-right: -85px;
+    margin-left: 400px;
+    padding-right: 15px;
+    margin-top: 55px;
+  }
+
+  /* Lista de links */
+  .menu-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu-links li {
+    text-align: left;
+  }
+
+  .menu-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block;
+  }
+
+  /*  Contact-info agora fica à direita */
+  .contact-info {
+    position: absolute;
+    right: 30rem;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: right;
+    width: auto; /* Garante que a div só ocupa o espaço necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: none;
+  }
+
+  .contact-info p {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    justify-content: flex-end;
+  }
+}

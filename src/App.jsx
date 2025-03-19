@@ -1,11 +1,21 @@
-import HomePage from "./pages";
-import { BrowserRouter, Routes, Route } from "react-router";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/Home/HomePage";
+import AboutPage from "./pages/About/AboutPage";
+import ProjectsPage from "./pages/Projects/ProjectsPage";
+import ContactPage from "./pages/Contact/ContactPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

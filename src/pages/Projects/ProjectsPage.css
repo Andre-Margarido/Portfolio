@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização da seção de projetos */
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+/* Titulo */
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Lista de projetos */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Cartões de projeto */
+.project-card {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Container do botão de contato */
+.projects-contact {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.projects-contact h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects-contact p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* Botao para Contact Me */
+.contact-btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+}
+
+.contact-btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .projects {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+}

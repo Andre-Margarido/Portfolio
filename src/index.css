@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+footer {
+  position: relative; /* Mantém o footer no final do conteúdo */
+}

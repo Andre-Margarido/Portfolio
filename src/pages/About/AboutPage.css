@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container principal */
+.about-page {
+  width: 100%;
+  min-height: 100vh; /* Garante que a página ocupa toda a tela */
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+/* Header preto com nome e profissão */
+.about-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: none;
+  position: relative;
+  left: 0;
+}
+
+/* Texto de introdução */
+.about-text {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Skills section */
+.about-skills {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.about-skills h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Lista de skills */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 10px;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Ícones das skills */
+.skills-list img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Seção de chamada para ação (CTA) */
+.about-cta {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.about-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Botão */
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: gray;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-list li {
+    width: 100%;
+    justify-content: center;
+  }
+}
