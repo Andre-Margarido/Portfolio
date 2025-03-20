@@ -23,7 +23,7 @@
   padding: 3rem 1rem;
   width: 100%;
   max-width: 100vw; /* Garante que ocupa toda a largura */
-  margin-top: -12px; /* Remove espaço extra caso tenha */
+  margin-top: -12px;
 }
 
 .contact-header h1 {

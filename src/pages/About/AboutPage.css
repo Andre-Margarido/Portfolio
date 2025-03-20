@@ -7,7 +7,7 @@
 /* Container principal */
 .about-page {
   width: 100%;
-  min-height: 100vh; /* Garante que a página ocupa toda a tela */
+  min-height: 100vh;
   background-color: white;
   padding: 2rem;
   display: flex;
@@ -18,7 +18,7 @@
   padding-bottom: 10rem;
 }
 
-/* Header preto com nome e profissão */
+/* Header */
 .about-header {
   background-color: black;
   color: white;
