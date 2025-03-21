@@ -10,7 +10,6 @@ export default function HomePage() {
 
   return (
     <main className="home">
-      {/* Menu lateral */}
       <div className="menu-container">
         <span className="menu-text">MENU</span>
         <ul className="menu-links">
@@ -26,7 +25,6 @@ export default function HomePage() {
         </ul>
       </div>
 
-      {/* Contato na parte inferior */}
       <div className="contact-info">
         <p>andre_margarido@hotmail.com</p>
         <p>+351 961058287</p>

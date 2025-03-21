@@ -24,7 +24,6 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      {/* Botao para Contact Me */}
       <div className="projects-contact">
         <h3>Want to work together?</h3>
         <p>Feel free to reach out and discuss new projects.</p>

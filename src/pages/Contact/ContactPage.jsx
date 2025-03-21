@@ -4,13 +4,11 @@ import "./ContactPage.css";
 export default function ContactPage() {
   return (
     <main className="contact-page">
-      {/* Cabeçalho Preto */}
       <section className="contact-header">
         <h1>CONTACT ME</h1>
         <h2>SAY HELLO TO ME</h2>
       </section>
 
-      {/* Formulário de Contato */}
       <section className="contact-form">
         <h3>Contact me</h3>
         <form>

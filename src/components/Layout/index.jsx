@@ -9,9 +9,9 @@ export default function Layout() {
 
   return (
     <>
-      {!isHomePage && <NavBar />} {/* Esconde o Navbar na Home */}
-      <Outlet /> {/* Renderiza o conteúdo da página atual */}
-      {!isHomePage && <Footer />} {/* Esconde o Footer na Home */}
+      {!isHomePage && <NavBar />}
+      <Outlet />
+      {!isHomePage && <Footer />}
     </>
   );
 }

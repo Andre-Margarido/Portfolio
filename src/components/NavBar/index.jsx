@@ -13,12 +13,10 @@ export default function NavBar() {
     <nav>
       <h1 className="logo">André Margarido</h1>
 
-      {/* Ícone ☰ que abre o menu no mobile */}
       <span className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </span>
 
-      {/* Menu de navegação */}
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>

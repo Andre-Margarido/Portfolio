@@ -8,13 +8,11 @@ import reactIcon from "../../assets/icons/react.png";
 export default function AboutPage() {
   return (
     <main className="about-page">
-      {/* Cabeçalho preto */}
       <header className="about-header">
         <h1>ANDRÉ MARGARIDO</h1>
         <h2>WEB DEVELOPER</h2>
       </header>
 
-      {/* Seção de introdução */}
       <section className="about-content">
         <div className="about-text">
           <h3>About Me</h3>
@@ -25,7 +23,6 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Lista de Skills */}
         <div className="about-skills">
           <h3>My Skills</h3>
           <ul className="skills-list">
@@ -44,7 +41,6 @@ export default function AboutPage() {
           </ul>
         </div>
 
-        {/* Seção de chamada para ação (CTA) */}
         <div className="about-cta">
           <h3>Give a sneak peek on my projects</h3>
           <a href="/projects" className="cta-button">
